@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+#mayor{
+    background-color: #87b5b5;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-rows: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#reader{
+    margin-top:30px;
+    height: 236px;
+    width: 600px;
+    border: 1px solid #1d2f2f;
+    justify-self:center;
+    border-radius: 0px;
+    grid-area:1/1/2/2;
+    box-shadow: 1px 1px 10px 4px #3a5f5f;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#Editor{
+    background-color: #4aa3a3;
+    height: 24px;
+    width: 590px;
+    padding: 5px;
+    font-family: Russo One;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.5;
+    border-bottom: 1px solid #1d2f2f;
+    display: flex;
+    justify-content: space-between;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#editor{
+    height: 191px;
+    width:590px;
+    border: 0;
+    box-shadow: 0px 0px 10px 2px #3a5f5f;
+    background-color:#c0d8d8;
+    padding: 5px;
+    
 }
-
-.App-link {
-  color: #61dafb;
+#writer{
+    margin-top: 300px;
+    width: 798px;
+    border: 1px solid #1d2f2f;
+    justify-self:center;
+    border-radius: 0px;
+    grid-area:1/1/2/2;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    margin-bottom: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#previewer{
+    background-color: #4aa3a3; 
+    border-bottom: 1px solid #1d2f2f;
+    padding: 5px;
+    font-family: Russo One;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.5;
+    box-shadow: 1px 1px 10px 4px #3a5f5f; 
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}   
+#preview{
+    background-color:#c0d8d8;
+    padding: 30px 15px 15px 20px;
+    z-index:0;
+}
+button{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
 }
